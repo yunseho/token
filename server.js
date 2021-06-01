@@ -93,6 +93,10 @@ app.post('/auth/local/login',async (req,res)=>{
 })
 
 
+app.get('/chat',(req,res)=>{
+    res.render('chat')
+})
+
 app.listen(3000,()=>{
     console.log('server start port: 3000');
 })
